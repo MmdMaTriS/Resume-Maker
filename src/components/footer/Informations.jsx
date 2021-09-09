@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Information({ Info }) {
   return (
@@ -25,5 +26,15 @@ function Information({ Info }) {
     </>
   );
 }
+
+Information.propTypes = {
+  Info: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+        .isRequired,
+    })
+  ),
+};
 
 export default Information;

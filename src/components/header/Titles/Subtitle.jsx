@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Subtitle({ Title }) {
   return (
@@ -9,5 +10,9 @@ function Subtitle({ Title }) {
     </div>
   );
 }
+
+Subtitle.prototype = {
+  Title: PropTypes.string,
+};
 
 export default Subtitle;
