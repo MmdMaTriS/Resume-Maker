@@ -29,9 +29,9 @@ function Footer() {
             <Information
               Info={[
                 { title: "Age", value: "23" },
-                { title: "ResidenceUSA", value: "USA" },
-                { title: "AddressLos", value: "Los Angeles, USA" },
-                { title: "E-mail", value: "email@example.com" },
+                { title: "Residence", value: "IR" },
+                { title: "Address", value: "Tehran" },
+                { title: "E-mail", value: "mmdzeinolabedin@gmail.com" },
                 { title: "Phone", value: "912-870-3992" },
                 { title: "Freelance", value: "Avalibale" },
               ]}
