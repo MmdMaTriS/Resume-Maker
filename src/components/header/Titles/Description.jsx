@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Description({ Description }) {
   return (
@@ -11,5 +12,9 @@ function Description({ Description }) {
     </React.Fragment>
   );
 }
+
+Description.propTypes = {
+  Description: PropTypes.string.isRequired,
+};
 
 export default Description;

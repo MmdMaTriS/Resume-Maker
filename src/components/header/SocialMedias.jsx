@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function SocialMedias({ Links }) {
   return (
@@ -13,5 +14,14 @@ function SocialMedias({ Links }) {
     </>
   );
 }
+
+SocialMedias.PropTypes = {
+  Links: PropTypes.arrayOf([
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
+    }),
+  ]),
+};
 
 export default SocialMedias;
